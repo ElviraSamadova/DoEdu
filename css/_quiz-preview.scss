@@ -1,0 +1,104 @@
+
+.sectionOne{
+    padding: 4% 0;
+    .left{
+        font-family: 'Quicksand', sans-serif;
+        h1{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        p{
+            color: #224573;
+            font-size: 18px;
+            width: 85%;
+            margin-top: 1.5rem ;
+            margin-bottom: 2rem;
+        }
+        .test-btn{
+            background: #5E5DF0;
+            border-radius: 30px;
+            box-shadow: #5E5DF0 0 10px 20px -10px;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            width: 20%;
+            border: 0;
+        }
+    }
+}
+
+.sectionTwo{
+    padding: 4% 0;
+    background-color: #fff;
+    h1{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 5%;
+        font-weight: bolder;
+    }
+
+    .process{
+        .box{
+            margin: 0 5% ;
+            text-align: center;
+            h5{
+                color: #224573;
+                font-family: 'Quicksand', sans-serif;
+                margin-top: 1rem;
+            }
+            .frame{
+               
+                position: relative !important;
+                i{
+                    position: absolute;
+                    top: 35% ;
+                    left: 25%;
+                    right: 25%;
+                    font-size: 40px;
+                    color: #5E5DF0;
+                }
+            }
+           
+        }
+    }
+}
+
+.sectionThree{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    padding:0  5%;
+    border-top: 3px solid #f3f7f7;
+        p{
+            color: #224573;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+        h1{
+            font-weight: bolder;
+        }
+    
+}
+
+.sectionFour{
+    // background-color: #fff;
+    padding: 5%;
+    font-family: 'Quicksand', sans-serif;
+    h1{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    p{
+        line-height: 2em;
+        color: #224573;
+        font-size: 17px;
+    }
+}
+
+// @media (max-width: 992px) {
+//     .sectionThree{
+//         .left{
+            
+//         }
+//     }
+// }

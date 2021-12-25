@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Quiz - DoEdu</title>
+    <link rel="icon" href="images/icon-top.png">
+    <link rel="stylesheet" href="vendors/css/bootstrap .css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="quiz">
+        <div class="container">
+            <div class="top row justify-content-between">
+               <div class="col-12 col-lg-6">
+                <div class="left d-flex">
+                    <div class="image"><img width="100px" src="images/brackets.png" alt=""></div>
+                    <div class="about m-3">
+                        <h1>Start Html Online Test</h1>
+                        <p>Questions 10</p>
+                    </div>
+                   </div>
+               </div>
+
+
+               <div class="col-12 col-lg-6">
+                <div class="timer">
+                    <div class="timer__items">
+                      <div class="timer__item timer__days">00</div>
+                      <div class="timer__item timer__hours">00</div>
+                      <div class="timer__item timer__minutes">00</div>
+                      <div class="timer__item timer__seconds">00</div>
+                    </div>
+                                  </div>
+               </div>
+
+            </div>  
+            
+            <!-- <div class="ready m-5">
+                <div class="d-flex align-items\">
+                    <div class="left">
+                        <h4>ARE YOU READY TO START?</h4>
+                        <img height="100px" src="images/yes-neon.png" alt="">
+                        <p>Good luck !</p>
+                    </div>
+                    
+                </div>
+            </div> -->
+            
+            <form id="quiz" name="quiz">
+                
+                <p>1. What should be the first tag in any HTML document?</p>
+                <input class="mc" name="question2" type="radio" value=""> title <br>
+                <input class="mc" name="question2" type="radio" value=""> head <br>
+                <input class="mc" name="question2" type="radio" value=""> html <br>
+                <input class="mc" name="question2" type="radio" value=""> document <br>
+                <br>
+    
+                <p>2. Choose the correct HTML tag for the smallest size heading</p>
+                <input class="mc" name="question2" type="radio" value=""> head <br>
+                <input class="mc" name="question2" type="radio" value=""> h6 <br>
+                <input class="mc" name="question2" type="radio" value=""> h1 <br>
+        
+                <br>
+    
+                <p>3. Is width=”100px” and width=”100%” the same?</p>
+                <input class="mc" name="question2" type="radio" value=""> Yes <br>
+                <input class="mc" name="question2" type="radio" value=""> No <br>
+        
+                <br>
+                
+                <p>4. What are 'div' tags used for?</p>
+                <input class="mc" name="question2" type="radio" value=""> To replace paragraphs. i.e. p tags <br>
+                <input class="mc" name="question2" type="radio" value=""> To logically divide the paragraphs <br>
+                <input class="mc" name="question2" type="radio" value=""> To logically divide the document <br>
+                <input class="mc" name="question2" type="radio" value=""> To provide space between tables <br>
+                <br>
+        
+                <p>5. HTML was first proposed in year ___</p>
+                <input class="mc" name="question2" type="radio" value=""> 1980 <br>
+                <input class="mc" name="question2" type="radio" value=""> 1995 <br> 
+                <input class="mc" name="question2" type="radio" value=""> 2000 <br> 
+                <input class="mc" name="question2" type="radio" value=""> 1990 <br> 
+                <br>
+
+                <p>6. What is the 'br' tag for?</p>
+                <input class="mc" name="question2" type="radio" value=""> Space <br>
+                <input class="mc" name="question2" type="radio" value=""> Paragraph break<br> 
+                <input class="mc" name="question2" type="radio" value=""> Line break <br>
+                <input class="mc" name="question2" type="radio" value=""> Word break <br>
+                <br>
+        
+                <p>7. How do you make the text bold?</p>
+                <input class="mc" name="question2" type="radio" value=""> style:bold <br>
+                <input class="mc" name="question2" type="radio" value=""> font-weight:bold <br> 
+                <br>
+
+                <p>8. What is the difference between an opening tag and a closing tag? </p>
+                <input class="mc" name="question2" type="radio" value=""> Closing tag has a / in front <br>
+                <input class="mc" name="question2" type="radio" value=""> There is no difference <br> 
+                <input class="mc" name="question2" type="radio" value=""> Opening tag has a / in front <br> 
+                <br>
+
+                <p>9. How do you make the text bold?</p>
+                <input class="mc" name="question2" type="radio" value=""> _blank<br>
+                <input class="mc" name="question2" type="radio" value=""> _son<br> 
+                <input class="mc" name="question2" type="radio" value=""> _parent <br> 
+                <br>
+
+                <p>10. Intensity Of A Color Can Be Described Through</p>
+                <input class="mc" name="question2" type="radio" value=""> Saturation <br>
+                <input class="mc" name="question2" type="radio" value=""> Grayscale <br> 
+                <input class="mc" name="question2" type="radio" value=""> Lightness<br> 
+                <br>
+
+                <div class="btns">
+                    <input type="button" value="Submit All" onclick="check();">
+                    <input type="reset" value="Reset All">
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <div id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="vendors/js/jquery-3.6.0.min"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
