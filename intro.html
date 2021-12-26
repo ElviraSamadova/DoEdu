@@ -7,6 +7,7 @@
     <title>An Introduction to HTML - DoEdu</title>
     <link rel="icon" href="images/icon-top.png">
     <link rel="stylesheet" href="vendors/css/bootstrap .css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -16,36 +17,50 @@
 <body>
 
     <header id="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-1 mx-5">
-                    <div class="logo">
-                        <a target="_blank" href="index.html"><img src="images/doedu-removebg-preview (1) 1.png" alt=""></a>
-                    </div>
+
+        <div class="header-w">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="logo pt-2 pb-2">
+                    <a target="_blank" href="index.html"><img width="60px" src="images/doedu-removebg-preview (1) 1.png" alt=""></a>
                 </div>
-                <div class="col-2">
-                        <ul class="menu list-unstyled d-flex justify-content-center">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Categories</a></li>
-                        </ul>
+
+                <div class="menu">
+                    <ul class="d-flex list-unstyled">
+                        <li style=" margin-right: 1rem;"><a href="about-us.html">About Us</a></li>
+                        <li class="blog"><a href="#">Blog</a></li>
+                    </ul>
                 </div>
-               
-                <div class="search col-5">
+
+                <div class="search-icon mx-4">
+                    <i class="fal fa-search"></i>
+                </div>
+
+                <div class="search mx-3 mx-md-5">
                     <input type="text" placeholder="Searh for anything">
                 </div>
-                <div class="col-3 right d-flex justify-content-center">
-                    <div class="user">
-                        <i class="fal fa-user"></i>
-                    </div>
-                    <div class="language">
-                        <a href="#">EN <i class="fal fa-angle-down"></i></a>
-                        <ul class="list-unstyled d-none">
-                            <li><a href="#">RU</a></li>
-                        </ul>
-                    </div>
+
+                <div class="user">
+                    <a href="faceid.html"><i class="fal fa-user"></i></a>
                 </div>
+
+                <div class="language mx-3">
+                    <a class="d-flex align-items-center lang-btn" href="#">EN <i class="fal fa-angle-down mx-1"></i></a>
+                    <ul class="drm-lang list-unstyled">
+                        <li><a href="#">AZ</a></li>
+                        <li style="border-top: none; border-bottom: none;"><a href="#">RU</a></li>
+                        <li style="background-color: #eeeeee;"><a href="#">EN
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="demo">
+                    <a target="_blank" href="ss.html">Demo</a>
+                </div>
+
             </div>
         </div>
+
+        
     </header>
 
     <div class="title-top mb-5">
@@ -74,108 +89,104 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-8">
-           <div class="container">
-            <div class="intro mb-5">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-12 col-md-4">
-                        <div class="left">
-                            <img class="img-fluid" src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/07/Como-inserir-imagem-ou-logo-usando-HTML-no-seu-site-1.png" alt="">
-                        </div>
-                       </div>
-                       <div class="col-12 col-md-8">
-                        <div class="right">
-                            <h2>HTML5 for Beginners: An Introduction</h2>
-                                    <p>Web programming cannot be imagined without the HTML markup language.HTML tells the browser to markup all objects on the page. Due to it,u can create: text fields,buttons,audio,video recordings and much more.During the course,we will learn the HTML5.</p>
-                                </div>
-                       </div>
-                        
-                    </div>
-                </div>
-            </div>
-        
-            <div class="video mb-5">
+    <div class="main-content">
+        <div class="row m-0 ">
+            <div class="col-lg-8 left">
                <div class="container">
-                <div class="title mx-5">
-                    <h2>Video tutorial</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <iframe width="80%" height="350" src="https://www.youtube.com/embed/VV85Xdk9MrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-               </div>
-            </div>
-        
-            <div class="info m-5">
-                <div class="container">
+                <div class="intro mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                         <div class="left">
+                             <img class="img-fluid wow flipInX" src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/07/Como-inserir-imagem-ou-logo-usando-HTML-no-seu-site-1.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                         <div class="right">
+                             <h2>HTML5 for Beginners: An Introduction</h2>
+                                     <p>Web programming cannot be imagined without the HTML markup language.HTML tells the browser to markup all objects on the page. Due to it,u can create: text fields,buttons,audio,video recordings and much more.During the course,we will learn the HTML5.</p>
+                                 </div>
+                        </div>
+                         
+                     </div>
+                </div>
+            
+                <div class="video mb-5">
+                        <div class="title mx-5">
+                        <h2>Video tutorial</h2>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <iframe  src="https://www.youtube.com/embed/VV85Xdk9MrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                </div>
+            
+                <div class="info m-5">
                     <div class="title m-0 mb-4 ">
                         <h2>Information about HTML</h2>
                     </div>
                     <p class="mb-4">HTML stands for HyperText Markup Language. It is a hypertext markup language that is widely used during the construction of web pages and documents. The HTML path began in the first half of the 90s. At the time, he was extremely primitive, but already helped to make simple pages for the web. Since then, the language has been constantly developing, by now it has already learned a lot. Without HTML, as we are used to, websites simply would not exist.</p>
-                    <div class="text-center"><img width="100%" src="https://kinsta.com/nl/wp-content/uploads/sites/7/2020/05/code-review-tools.png" alt=""></div>
+                    <div class="text-center wow fadeInLeftBig"><img width="100%" src="https://kinsta.com/nl/wp-content/uploads/sites/7/2020/05/code-review-tools.png" alt=""></div>
                 </div>
-            </div>
-           </div>
-        
-    
-        </div>
-
-        <div class="col-lg-3">
+               </div>
             
-            <div class="nav-intro mb-5">
-                <div class="title">
-                 <h2>Course Navigation</h2>
-                </div>
-                <div class="syll ">
-                    <p>1. HTML5 for Beginners: An Introduction to HTML</p>
-                    <p>2. The file "index.html". Site display</p>
-                    <p>3. Text content markup: headings, paragraphs, lists, links. Tag</p>
-                    <p>4. Types of HTML tags. HTML nesting rule</p>
-                    <p>5. HTML element block model</p>
-                    <p>6. Page validation</p>
-                    <p>7. Working with lists and links</p>
-                    <p>8. The site as a whole. Basic design concept</p>
-                </div>
-                 
- 
-             </div>
-             <div class="quiz-intro mb-5">
-                <div class="title mb-4">
-                    <h2>Quiz</h2>
-                </div>
-                <div class="box">
-                    <div class="d-flex align-items-center">
-                        <img src="https://itproger.com/img/tests/html.svg" alt="">
-                        
-                        <div class="text mx-4">
-                            <span><span style="color: #5e5df0 ; font-size: 20px;">30</span> minutes</span><br>
-                            <span ><span style="color:#5E5DF0; font-size: 20px;">10</span> questions</span><br>
+        
+            </div>
+    
+            <div class="col-lg-3 right">
+                
+                <div class="nav-intro mb-5">
+                    <div class="title">
+                     <h2>Course Navigation</h2>
+                    </div>
+                    <div class="syll ">
+                        <p>1. HTML5 for Beginners: An Introduction to HTML</p>
+                        <p>2. The file "index.html". Site display</p>
+                        <p>3. Text content markup: headings, paragraphs, lists, links. Tag</p>
+                        <p>4. Types of HTML tags. HTML nesting rule</p>
+                        <p>5. HTML element block model</p>
+                        <p>6. Page validation</p>
+                        <p>7. Working with lists and links</p>
+                        <p>8. The site as a whole. Basic design concept</p>
+                    </div>
+                     
+     
+                 </div>
+                 <div class="quiz-intro mb-5">
+                    <div class="title mb-4">
+                        <h2>Quiz</h2>
+                    </div>
+                    <div class="box">
+                        <div class="d-flex align-items-center q-box">
+                            <img src="https://itproger.com/img/tests/html.svg" alt="">
+                            
+                            <div class="text mx-4">
+                                <span ><span style="color:#5E5DF0; font-size: 20px;margin-right: 5px">5 </span> questions</span><br>
+                                <span><span style="color: #5e5df0 ; margin-right: 5px;"><i class="far fa-alarm-exclamation mt-2"></i> </span> limited time</span><br>
+                            </div>
                         </div>
+                        <a target="_blank" class="mt-4 qp-btn" href="quiz.html">Try Now <i class="far fa-arrow-circle-right mx-1"></i></a>
                     </div>
-                    <a target="_blank" class="mt-4 qp-btn" href="quiz-preview.html">More Information <i class="far fa-arrow-circle-right"></i></a>
                 </div>
-            </div>
-             <div class="runner mb-5">
+                 <div class="runner mb-5">
+                        <div class="title m-0">
+                            <h2>Online code editor</h2>
+                        </div>
+                        <p style="font-size: 18px;">Try to write the code yourself!</p>
+    
+                    <a target="_blank" class="qp-btn mt-2" href="runner.html">Open Code Runner <i class="far fa-arrow-circle-right mx-1"></i></a>
+    
+                </div>
+    
+                <div class="ques mb-5">
                     <div class="title m-0">
-                        <h2>Online code editor</h2>
+                        <h2>Do u have a question?</h2>
                     </div>
-                    <p style="font-size: 18px;">Try to write the code yourself!</p>
-                    <h3>tut budet iframe ot code runner :)</h3>
-                <a target="_blank" class="qp-btn mt-4" href="q-a.html">Open Code Runner <i class="far fa-arrow-circle-right"></i></a>
-
-            </div>
-
-            <div class="ques mb-5">
-                <div class="title m-0">
-                    <h2>Do u have a question?</h2>
+                    <p style="font-size: 18px;">Ask now and see other students questions!</p>
+                    <a target="_blank" class="qp-btn" href="q-a.html">Open Question & Answer Page <i class="far fa-arrow-circle-right mx-1"></i></a>
                 </div>
-                <p style="font-size: 18px;">Ask now and see other students questions!</p>
-                <a target="_blank" class="qp-btn" href="q-a.html">Open Question & Answer Page <i class="far fa-arrow-circle-right"></i></a>
             </div>
         </div>
-
     </div>
+   
 
     <div class="comments">
         <div class="container">
@@ -237,48 +248,53 @@
        </div>
         </div>
      </div>
-    
 
-    <footer id="footer">
+     <footer id="footer">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-3">
-                    <div class="logo">
+                <div class="col-md-3 logo-left">
+                    <div class="logo text-center">
                         <img src="images/doedu-removebg-preview 1.png" alt="">
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-md-2">
                     <ul class="list-unstyled">
-                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-2">
+                    <ul class="list-unstyled">
                         <li><a href="#">Help center</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Store</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Blog</a></li>
                         <li><a href="#">FAQ's</a></li>
-                        <li><a href="#">Store</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-2">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
                     <div class="sm">
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><img src="images/Path.png" alt=""></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <div class="copyright">
+                    <div class="copyright mt-2">
                         <span> &copy; 2021 DoEdu </span>
                     </div>
                 </div>
+                <div class="col-6 col-md-3 logo-bottom">
+                    <div class="logo text-center">
+                        <img src="images/doedu-removebg-preview 1.png" alt="">
+                    </div>
+                </div>
+                
             </div>
         </div>
     </footer>
@@ -287,7 +303,10 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 
-
+    <script src="vendors/js/jquery-3.6.0.min"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/script.js"></script>
     <script src="js/stt.js"></script>
    
 

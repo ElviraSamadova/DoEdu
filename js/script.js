@@ -1,59 +1,40 @@
-
-				
-const videoElem = document.getElementById("video");
-const logElem = document.getElementById("log");
-const startElem = document.getElementById("start");
-const stopElem = document.getElementById("stop");
-
-// Options for getDisplayMedia()
-
-var displayMediaOptions = {
-  video: {
-    cursor: "always"
-  },
-  audio: false
-};
-
-// Set event listeners for the start and stop buttons
-startElem.addEventListener("click", function(evt) {
-  startCapture();
-}, false);
-
-stopElem.addEventListener("click", function(evt) {
-  stopCapture();
-}, false);
+// new TypeIt(".tpc", {
+//   speed: 50,
+//   waitUntilVisible: true,
+// }).go();
 
 
-async function startCapture() {
-  logElem.innerHTML = "";
+// ScrollReveal().reveal('.box');
 
-  try {
-    videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
-    dumpOptionsInfo();
-  } catch(err) {
-    console.error("Error: " + err);
-  }
-}
+// $(document).ready(function() {
+// 	$('.tpc').funnyText({
+// 		speed: 700,
+// 		borderColor: 'black',
+// 		activeColor: 'white',
+// 		color: 'black',
+// 		fontSize: '7em',
+// 		direction: 'both'
+// 	});
+// });
 
-function stopCapture(evt) {
-  let tracks = videoElem.srcObject.getTracks();
+$(".language .lang-btn").click(function(){
+  $(".drm-lang").stop().slideToggle()
+})
 
-  tracks.forEach(track => track.stop());
-  videoElem.srcObject = null;
-}
+$(".accordion button").click(function(){
+   $(".accordion p").stop().slideUp()
+    $(this).next().stop().slideToggle()
+})
 
-
-function dumpOptionsInfo() {
-  const videoTrack = videoElem.srcObject.getVideoTracks()[0];
-
-  console.info("Track settings:");
-  console.info(JSON.stringify(videoTrack.getSettings(), null, 2));
-  console.info("Track constraints:");
-  console.info(JSON.stringify(videoTrack.getConstraints(), null, 2));
-}
+// $(".accordion button").click(function(){
+// $(".acc-icon").css("transform","rotate(180deg)")
+	
+//  })
 
 
 
 
-
-
+// $("#accordion button").click(function(){
+//   $("#accordion p").stop().slideUp()
+//    $(this).next().stop().slideToggle()
+// })

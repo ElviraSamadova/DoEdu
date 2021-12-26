@@ -6,7 +6,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 7% 8%;
+    padding: 5% 8%;
+    height: 25vh;
    
     .background{
         background-color: rgba(37, 37, 37, 0.37);
@@ -31,7 +32,6 @@
 }
 
 p{
-    // width: 95%;
     line-height: 1.7em;
 }
 
@@ -49,6 +49,18 @@ p{
             color: #FFFFFF !important;
         }
 }
+
+.main-content{
+    .left{
+        .video{
+            iframe{
+                width: 80%;
+                height: 350px;
+            }
+        }
+    }
+}
+
 
 .nav-intro{
     .syll{
@@ -98,4 +110,46 @@ p{
     }
     
     
+}
+
+@media (max-width: 992px) {
+    .main-content{
+        .right{
+            text-align: center;
+            padding: 0 5%;
+        }
+        .quiz-intro{
+            .box{
+                .q-box{
+                    justify-content: center;
+                }
+            }
+        }
+        .left{
+            .video{
+                iframe{
+                    width: 80%;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content{
+        .left{
+            .video{
+                iframe{
+                    width: 80%;
+                    height: 150px;
+                }
+            }
+            .info{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }
